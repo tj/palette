@@ -1,10 +1,23 @@
 #!/usr/bin/env node
 
 var palette = require('./')
-  , canvas = require('canvas')
-  , path = process.argv[2];
+  , Canvas = require('canvas')
+  , Image = Canvas.Image
+  , canvas = new Canvas
+  , ctx = canvas.getContext('2d')
+  , path = process.argv[2]
+  , out = '/tmp/out.png';
 
 if (!path) {
   console.error('Usage: test <image>');
   process.exit(1);
 }
+
+var img = new Image;
+
+img.onload = function(){
+  canvas.width = img.width;
+  canvas.height = img.height;
+};
+
+img.src = path;
