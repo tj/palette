@@ -22,12 +22,16 @@ img.onload = function(){
   ctx.fillStyle = 'white';
   ctx.fillRect(0, 0, canvas.width, canvas.height);
   ctx.drawImage(img, 0, 0);
-  var colors = palette(canvas);
-  console.log(colors);
+  paintPalette();
   save();
 };
 
 img.src = path;
+
+function paintPalette() {
+  var colors = palette(canvas);
+  console.log(colors);
+}
 
 function save() {
   fs.writeFile(out, canvas.toBuffer(), function(err){
