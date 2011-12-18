@@ -18,7 +18,9 @@ var img = new Image;
 
 img.onload = function(){
   canvas.width = img.width;
-  canvas.height = img.height;
+  canvas.height = img.height + 50;
+  ctx.fillStyle = 'white';
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
   ctx.drawImage(img, 0, 0);
   fs.writeFile(out, canvas.toBuffer(), function(err){
     if (err) throw err;
