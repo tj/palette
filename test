@@ -22,7 +22,7 @@ img.onload = function(){
   ctx.fillStyle = 'white';
   ctx.fillRect(0, 0, canvas.width, canvas.height);
   ctx.drawImage(img, 0, 0);
-  palette(canvas);
+  var colors = palette(canvas);
   fs.writeFile(out, canvas.toBuffer(), function(err){
     if (err) throw err;
     console.log('saved %s', out);
