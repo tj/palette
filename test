@@ -7,10 +7,11 @@ var palette = require('./')
   , canvas = new Canvas
   , ctx = canvas.getContext('2d')
   , path = process.argv[2]
+  , n = ~~process.argv[3] || 5
   , out = '/tmp/out.png';
 
 if (!path) {
-  console.error('Usage: test <image>');
+  console.error('Usage: test <image> [colors]');
   process.exit(1);
 }
 
@@ -30,7 +31,7 @@ img.src = path;
 
 function paintPalette() {
   var x = 0;
-  var colors = palette(canvas);
+  var colors = palette(canvas, n);
   colors.forEach(function(color){
     var r = color[0]
       , g = color[1]
