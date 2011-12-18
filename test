@@ -29,8 +29,18 @@ img.onload = function(){
 img.src = path;
 
 function paintPalette() {
+  var x = 0;
   var colors = palette(canvas);
-  console.log(colors);
+  colors.forEach(function(color){
+    var r = color[0]
+      , g = color[1]
+      , b = color[2]
+      , val = r << 16 | g << 8 | b
+      , str = '#' + val.toString(16);
+
+    ctx.fillStyle = str;
+    ctx.fillRect(x += 31, canvas.height - 40, 30, 30);
+  });
 }
 
 function save() {
