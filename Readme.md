@@ -37,6 +37,8 @@ colors.forEach(function(color){
 $ ./test examples/cat.jpg && open /tmp/out.png
 ```
 
+ ![learnboost](http://f.cl.ly/items/3K3C1Z1006083Q00231q/Grab.png)
+
 ## License 
 
 (The MIT License)
