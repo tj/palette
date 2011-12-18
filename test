@@ -1,3 +1,10 @@
 #!/usr/bin/env node
 
-var palette = require('./');
+var palette = require('./')
+  , canvas = require('canvas')
+  , path = process.argv[2];
+
+if (!path) {
+  console.error('Usage: test <image>');
+  process.exit(1);
+}
