@@ -1,7 +1,21 @@
 
-# palette
+# Palette
 
-  Image color palette with node-canvas
+  Image color palette with node-canvas for [node.js](http://nodejs.org);
+
+  ![image color palette example](http://f.cl.ly/items/3i0v0u251O3D0M020e20/Grab.png)
+
+## Installation
+
+```
+$ npm install palette
+```
+
+### Running the examples
+
+```
+$ ./test examples/cat.jpg && open /tmp/out.png
+```
 
 ## License 
 
