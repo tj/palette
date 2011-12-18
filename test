@@ -23,10 +23,15 @@ img.onload = function(){
   ctx.fillRect(0, 0, canvas.width, canvas.height);
   ctx.drawImage(img, 0, 0);
   var colors = palette(canvas);
+  console.log(colors);
+  save();
+};
+
+img.src = path;
+
+function save() {
   fs.writeFile(out, canvas.toBuffer(), function(err){
     if (err) throw err;
     console.log('saved %s', out);
   });
-};
-
-img.src = path;
+}
