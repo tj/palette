@@ -1,7 +1,7 @@
 
 # Palette
 
-  Image color palette extraction with node-canvas for [node.js](http://nodejs.org);
+  Image color palette extraction with node-canvas for [node.js](http://nodejs.org)
 
   ![image color palette example](http://f.cl.ly/items/3i0v0u251O3D0M020e20/Grab.png)
 
