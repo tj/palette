@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 var palette = require('./')
+  , fs = require('fs')
   , Canvas = require('canvas')
   , Image = Canvas.Image
   , canvas = new Canvas
@@ -18,6 +19,11 @@ var img = new Image;
 img.onload = function(){
   canvas.width = img.width;
   canvas.height = img.height;
+  ctx.drawImage(img, 0, 0);
+  fs.writeFile(out, canvas.toBuffer(), function(err){
+    if (err) throw err;
+    console.log('saved %s', out);
+  });
 };
 
 img.src = path;
