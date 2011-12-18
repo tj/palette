@@ -31,11 +31,13 @@ colors.forEach(function(color){
 });
 ```
 
-### Running the examples
+## Running the examples
 
 ```
 $ ./test examples/cat.jpg && open /tmp/out.png
 ```
+
+## Booyah
 
  ![learnboost](http://f.cl.ly/items/3K3C1Z1006083Q00231q/Grab.png)
 
