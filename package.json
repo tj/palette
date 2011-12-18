@@ -6,7 +6,7 @@
   , "author": "TJ Holowaychuk <tj@vision-media.ca>"
   , "devDependencies": {
       "canvas": "0.8.x"
-    , "vbench": "*"
+    , "vbench": "0.1.x"
   }
   , "main": "index"
   , "engines": { "node": "0.6.x" }
