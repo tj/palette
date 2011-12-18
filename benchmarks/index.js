@@ -1,7 +1,6 @@
 
 var vbench = require('vbench')
   , palette = require('../')
-  , fs = require('fs')
   , Canvas = require('canvas')
   , Image = Canvas.Image
   , canvas = new Canvas
