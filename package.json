@@ -1,26 +1,29 @@
 {
-    "name": "palette",
-    "version": "0.0.1",
-    "description": "Image color palette with node-canvas",
-    "keywords": [
-        "palette",
-        "color",
-        "image",
-        "sample",
-        "canvas",
-        "photo"
-    ],
-    "author": "TJ Holowaychuk <tj@vision-media.ca>",
-    "devDependencies": {
-        "canvas": "0.8.x",
-        "vbench": "0.1.x"
-    },
-    "main": "index",
-    "engines": {
-        "node": "0.6.x"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/visionmedia/palette.git"
-    }
+  "name": "palette",
+  "version": "0.0.1",
+  "description": "Image color palette with node-canvas",
+  "keywords": [
+    "palette",
+    "color",
+    "image",
+    "sample",
+    "canvas",
+    "photo"
+  ],
+  "author": "TJ Holowaychuk <tj@vision-media.ca>",
+  "devDependencies": {
+    "canvas": "1.5.x",
+    "vbench": "0.1.x"
+  },
+  "main": "index",
+  "engines": {
+    "node": "5.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/visionmedia/palette.git"
+  },
+  "dependencies": {
+    "canvas": "^1.5.0"
+  }
 }
