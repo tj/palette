@@ -11,6 +11,8 @@
 $ npm install palette
 ```
 
+  *Note:* Palette's dependency, [node-canvas](https://github.com/Automattic/node-canvas), requires that Cairo be installed. Please see the [installation guide](https://github.com/Automattic/node-canvas#installation) for node-canvas for further details.
+
 ## API
 
  Palette's public API consists of a single function, the one returned by `require()`. This function accepts the `canvas` you wish to compute a color palette for, and an optional number of samples defaulting to `5`.
@@ -99,7 +101,7 @@ function save() {
 
  ![learnboost](http://f.cl.ly/items/3K3C1Z1006083Q00231q/Grab.png)
 
-## License 
+## License
 
 (The MIT License)
 
